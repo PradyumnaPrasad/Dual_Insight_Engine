@@ -6,6 +6,14 @@ Standard Large Language Models (LLMs) can answer questions based on their traini
 
 Instead of just asking a question to a generic model, you can upload two distinct PDF documents (e.g., a Tesla vs. a Ford quarterly report, two different research papers, or competing policy drafts). The application then retrieves the most relevant information from both sources simultaneously and uses a powerful LLM to generate a structured, side-by-side comparison, complete with metrics, summaries, and data visualizations.
 
+## Tech Stack ##
+Frontend: Streamlit
+Core Language: Python
+AI/LLM: Google Gemini API
+Vector Database: Chroma
+LLM Orchestration: LangChain
+PDF Parsing: pypdf
+
 ## ✨ Features
 Dual Document Upload: A clean interface to upload two separate PDF documents (Corpus A and Corpus B).
 
@@ -35,5 +43,6 @@ Dual Retrieval: When a user asks a comparative question, the system queries both
 Augment & Generate: The retrieved chunks from both documents are injected into a specialized prompt. This augmented prompt is sent to the Gemini API, instructing it to perform a comparative analysis and return a structured JSON object.
 
 Display: The Streamlit frontend parses the JSON response to display the summary, similarities.
+
 
 
