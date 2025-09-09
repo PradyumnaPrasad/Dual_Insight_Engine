@@ -8,10 +8,15 @@ Instead of just asking a question to a generic model, you can upload two distinc
 
 ## Tech Stack ##
 Frontend: Streamlit
+
 Core Language: Python
+
 AI/LLM: Google Gemini API
+
 Vector Database: Chroma
+
 LLM Orchestration: LangChain
+
 PDF Parsing: pypdf
 
 ## ✨ Features
@@ -43,6 +48,7 @@ Dual Retrieval: When a user asks a comparative question, the system queries both
 Augment & Generate: The retrieved chunks from both documents are injected into a specialized prompt. This augmented prompt is sent to the Gemini API, instructing it to perform a comparative analysis and return a structured JSON object.
 
 Display: The Streamlit frontend parses the JSON response to display the summary, similarities.
+
 
 
 
